@@ -1,0 +1,30 @@
+server:
+  port: 8088
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: com.example.demo.entity
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: utf-8
+    mode: html
+    servlet:
+      content-type: text/html
+
+#打印sql
+logging:
+  level:
+    com:
+      example:
+        demo:
+          dao: debug

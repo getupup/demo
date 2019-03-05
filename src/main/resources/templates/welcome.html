@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+</head>
+<body th:inline="text">
+HELLO <p th:text="${session.user.getName()}"></p>
+<a href="/user/logout">退出登录</a>
+</body>
+</html>

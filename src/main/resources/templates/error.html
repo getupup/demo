@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错误页面</title>
+</head>
+<body>
+<center>
+    <font color="red">
+        ERROR !!!
+        <div th:text="${#httpServletRequest.getAttribute('msg')}"></div>
+    </font>
+</center>
+</body>
+</html>
